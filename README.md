@@ -45,3 +45,17 @@ Para colocar una imagen de fondo (background) utilizando CSS, tal como se docume
        background-image: url('hero_bg.jpg');
    }
    ```
+3. **Controla la apariencia del fondo (Explicación de propiedades):**
+   Por defecto, las imágenes de fondo se muestran en su tamaño original y se repiten infinitamente (como un mosaico) para rellenar el espacio. Para que la imagen luzca profesional y adaptada a la caja, usamos estas propiedades adicionales:
+
+   * **`background-image`**: Es la propiedad principal que le ordena al contenedor qué imagen gráfica debe pintar de fondo.
+   * **`background-size: cover;`**: Esta propiedad obliga a la imagen a crecer o encogerse hasta **cubrir el 100% de la caja** sin perder sus proporciones. Esto evita que la imagen se vea estirada o achatada. Si la caja y la imagen tienen proporciones diferentes, `cover` recortará el sobrante.
+   * **`background-position: center;`**: Define el punto de anclaje de la imagen. Al establecerlo en `center`, nos aseguramos de que el centro exacto de la fotografía siempre esté alineado con el centro de la caja, garantizando que el recorte sea simétrico en los bordes.
+
+   ```css
+   .hero-section {
+       background-image: url('hero_bg.jpg');
+       background-size: cover;      
+       background-position: center; 
+   }
+   ```
