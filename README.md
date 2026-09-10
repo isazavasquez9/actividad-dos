@@ -22,3 +22,18 @@ Las reglas del proyecto original se mantienen estrictamente:
 | **`#94a3b8`** | Slate 400 (Gris Claro) | Texto del pie de página |
 | **`#e2e8f0`** | Slate 200 (Gris Muy Claro)| Líneas delimitadoras (Bordes del header, footer y tarjetas) |
 
+## Cómo incluir una imagen de fondo en una etiqueta
+
+Para colocar una imagen de fondo (background) utilizando CSS, tal como se documentó en las actividades previas, debes seguir estos sencillos pasos:
+
+1. **Añade una clase a tu etiqueta HTML:**
+   Asegúrate de que el contenedor donde irá el fondo tenga una clase (recuerda que en este proyecto usamos únicamente clases).
+   ```html
+   <header class="hero-section">
+       <!-- Tu contenido -->
+   </header>
+   ```
+
+2. **Enlázalo usando `background-image` en tu archivo CSS:**
+   En tu hoja de estilos, llama a la clase y usa la propiedad `background-image` con la función `url()` para indicar la ruta de la imagen. 
+   
