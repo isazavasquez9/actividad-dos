@@ -37,3 +37,11 @@ Para colocar una imagen de fondo (background) utilizando CSS, tal como se docume
 2. **Enlázalo usando `background-image` en tu archivo CSS:**
    En tu hoja de estilos, llama a la clase y usa la propiedad `background-image` con la función `url()` para indicar la ruta de la imagen. 
    
+  * **Origen de la imagen:** La imagen puede estar previamente descargada y guardada dentro de la misma carpeta de tu proyecto, o bien, puedes colocar una URL externa completa de una imagen que esté en internet.
+   * **Uso de comillas:** Dentro de la función `url()`, el uso de comillas simples o dobles es **completamente opcional**. Es válido escribir `url(hero_bg.jpg)` sin comillas. Sin embargo, usar comillas es una buena práctica recomendada, especialmente si la ruta o el nombre del archivo contiene espacios o caracteres especiales.
+
+   ```css
+   .hero-section {
+       background-image: url('hero_bg.jpg');
+   }
+   ```
